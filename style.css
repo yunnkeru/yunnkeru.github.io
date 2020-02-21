@@ -1,0 +1,171 @@
+/*==============
+全体的なスタイル*/
+* {
+  margin: 0; padding: 0; /*全体のマージン・パディングをリセット*/
+  line-height: 1.5; /*全体の行の高さを1.5倍にする*/
+  color: #333333; /*全体の文字色*/
+}
+body {
+  background-color: rgba(255, 255, 0, 0.089); /*ページ全体の背景色*/
+  
+  text-align: center; /*IE6以下でセンタリングするための対策*/
+}
+div#body{
+  width:800px; margin: 0 auto; /*内容全体をセンタリング*/
+  border: 1px solid#333333;
+  text-align: left; /*テキストの配置を左揃えにする*/
+  background-color: rgba(146, 12, 63, 0.089); /*内容全体の背景色*/
+}
+/*==============
+ヘッダー========*/
+div#header {
+  height: 70px;
+  display: flex;
+  background-color: rgba(255, 153, 0, 0.473);
+}
+div#header p {
+  letter-spacing: 0.1em;
+  font-size: 17px;
+  font-family:monospace;
+  margin: auto;
+  padding-left: 50px;
+  
+}
+div#header h1 {
+  letter-spacing: 0.05em;
+  font-size:30px;
+  font-family:monospace;
+  margin: auto;
+  padding-right: 190px;
+}
+/*==============
+メインメニュー==*/
+ul#menu {
+  height:46px;
+  background-color: #890eee44;
+  font-weight: bold;
+}
+li#menu01,li#menu02,li#menu03,li#menu04 {
+  float: left;/*リスト項目を横に並べる*/
+	list-style-type:none;		/*リストマーカー無しにする*/
+  background-repeat:no-repeat; 	/*背景画像を繰り返さない*/
+  border-top:2px solid #f31010;
+  border-bottom: 2px solid #f31010;
+  
+}
+li#menu01 {
+	width:196px; height:42px;	/*背景画像に合わせたサイズ指定*/
+  
+  border-right: 2px solid #f31010;	/*背景画像*/
+}
+li#menu02 {
+  width:198px; height:42px;	/*背景画像に合わせたサイズ指定*/
+  border-right: 2px solid #f31010;	/*背景画像*/
+}
+li#menu03 {
+  width:198px; height:42px;	/*背景画像に合わせたサイズ指定*/
+  border-right: 2px solid #f31010;	/*背景画像*/
+}
+li#menu04 {
+  width:202px; height:42px;	/*背景画像に合わせたサイズ指定*/
+  	/*背景画像*/
+}
+ul#menu p {
+  text-align: center;
+  margin-top: 10px;
+}
+ul#menu p a {
+	height:42px; padding-top:4px; text-align:center;
+	text-decoration:none; 	/*リンクの下線を無くす*/
+  font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
+}
+/*==============
+カラム全体==*/
+div#mainmenu {
+  height: 800px;
+}
+/*==============
+サブメニュー==*/
+div#submenu {
+  width:160px;
+  margin:20px 10px 10px 25px;	/*位置調整（IE6のバグに注意）*/
+	float: left;
+}
+div#submenu_header {
+	height:26px; padding:4px 0px 0px 0px;
+	background-repeat:no-repeat; 
+	background-color:#cccccc;
+	font-size:90%; font-weight:bold; text-align:center;
+}
+ul#submenu_body {
+	background-repeat:no-repeat; 
+  background-color:#cccccc;
+  text-align: center;
+}
+ul#submenu_body li {
+	font-size:90%;			/*文字サイズを90%にする*/
+  list-style-type:none;		/*リストマーカー無しにする*/
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+/*==============
+メインセクション全体==*/
+div#section {
+  width:560px; margin:10px 20px 10px 0px;	/*幅の指定と位置調整*/
+	float:right;				/*2カラム全体を右寄せにする*/
+}
+/*==============
+メインセクション左カラム==*/
+div#news {
+	width:390px; margin-right:5px; padding-top:10px; /*幅の指定と位置調整*/
+	float:left;					/*カラムを左寄せにする*/
+	background-repeat:no-repeat;			/*背景画像を繰り返さない*/
+}
+div#news h1 {
+	font-size:100%; margin-bottom:10px; 
+	font-size:95%; border-bottom:solid 1px #cccccc;
+	background-repeat:no-repeat; background-position:left center;
+}
+div#news figure {
+  text-align: center;
+  margin-top: 20px;
+}
+div#news figure figcaption {
+  font-size:80%; margin:10px 0px 10px 0px; 
+}
+hr {height:1px; border:solid 1px #cccccc; margin-bottom:5px;}
+/*==============
+メインセクション右カラム==*/
+div#pickup {
+	width:150px; padding-top:10px; 		/*幅の指定と位置調整*/
+	float:right;				/*カラムを右寄せにする*/
+	background-image:url("images/bar_pickup.gif");	/*右カラムの背景画像*/
+	background-repeat:no-repeat;		 /*背景画像を繰り返さない*/
+}
+div#pickup h2 {
+  font-size:100%; margin-bottom:10px; 
+	font-size:95%; border-bottom:solid 1px #cccccc;
+	background-repeat:no-repeat; background-position:left center;
+}
+div#pickup ul {
+	margin-left:5px; 		/*左マージンを10px空ける*/
+	font-size:90%;			/*フォントサイズを90%にする*/
+}
+div#pickup li {
+	list-style-type:none; 		/*リストマーカー無しにする*/
+	line-height:1.8;		/*行の高さを1.8倍にする*/
+}
+/*==============
+フッター========*/
+footer {
+	height:35px; text-align:center;
+	clear:both;					/*回り込みを解除する*/
+	background-repeat:no-repeat;			/*背景画像を繰り返さない*/
+	background-color:#cccccc;			/*フッタ部分の背景色*/
+}
+address {
+	font-style:normal;			 /*フォントスタイルを標準にする*/
+	font-size:small;			 /*フォントサイズを小さくする*/
+	padding:5px 0px 5px 0px;		 /*要素内容の位置調整*/
+}
